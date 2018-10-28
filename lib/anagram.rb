@@ -10,7 +10,6 @@ class Anagram
   
   def match(list)
    
-    a = {}
     g = []
     
     d = @word.split("")
