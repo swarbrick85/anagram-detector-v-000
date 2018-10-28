@@ -11,7 +11,6 @@ class Anagram
   def match(list)
    
     a = {}
-    x = list.split(" ")
     
     
     list.each do |wor|
