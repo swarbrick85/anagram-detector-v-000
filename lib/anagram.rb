@@ -11,13 +11,18 @@ class Anagram
   def match(list)
    
     a = {}
-    
+    g = []
     
     d = @word.split("")
     e = d.sort 
     f = e.join
     
     list.each do |word|
+      if word.split("").sort.join == f 
+        g << word 
+      end 
+    end 
+      
     g
   end 
   
