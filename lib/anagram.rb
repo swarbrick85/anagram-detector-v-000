@@ -13,12 +13,12 @@ class Anagram
     a = {}
     
     
-    list.each do |wor|
+    list.each do |word|
       
-      b = wor.split("")
+      b = word.split("")
       c = b.sort 
       h = c.join
-      a[h] = wor 
+      a[h] = word 
     end 
     
 
@@ -28,9 +28,9 @@ class Anagram
     
     
     g = [] 
-    a.each do |jumble, wort|
+    a.each do |jumble, word|
       if jumble == f 
-        g << wort 
+        g << word 
       end 
     end 
     g
