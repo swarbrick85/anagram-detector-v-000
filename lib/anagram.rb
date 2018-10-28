@@ -9,6 +9,7 @@ class Anagram
   end 
   
   def match(list)
+   
     a = {}
     
     
@@ -24,6 +25,8 @@ class Anagram
     d = @word.split("")
     e = d.sort 
     f = e.join
+    
+    binding.pry
     
     g = [] 
     a.each do |jumble, wort|
