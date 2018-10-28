@@ -27,7 +27,6 @@ class Anagram
     e = d.sort 
     f = e.join
     
-    binding.pry
     
     g = [] 
     a.each do |jumble, wort|
