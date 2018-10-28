@@ -11,10 +11,11 @@ class Anagram
   def match(list)
    
     a = {}
-    
+    x = list.split(" ")
     
     
     list.each do |wor|
+      
       b = wor.split("")
       c = b.sort 
       h = c.join
