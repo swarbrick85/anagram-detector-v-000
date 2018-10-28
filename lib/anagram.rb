@@ -10,30 +10,18 @@ class Anagram
   
   def match(list)
    
-    a = {}
+    g = []
     
-    
-    
-    list.each do |wor|
-      b = wor.split("")
-      c = b.sort 
-      h = c.join
-      a[h] = wor 
-    end 
-    
-
     d = @word.split("")
     e = d.sort 
     f = e.join
     
-    binding.pry
-    
-    g = [] 
-    a.each do |jumble, wort|
-      if jumble == f 
-        g << wort 
+    list.each do |word|
+      if word.split("").sort.join == f 
+        g << word 
       end 
     end 
+      
     g
   end 
   
