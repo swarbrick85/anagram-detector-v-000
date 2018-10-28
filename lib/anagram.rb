@@ -21,7 +21,6 @@ class Anagram
       a[h] = word 
     end 
     
-binding.pry 
     d = @word.split("")
     e = d.sort 
     f = e.join
